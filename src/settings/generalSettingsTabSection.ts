@@ -56,6 +56,14 @@ export class GeneralSettingsTabSection extends SettingsTabSection {
 
     this.addToggleSetting(
       containerEl,
+      'Enable acronym search',
+      'When enabled, adds additional search results by matching the first letter of each word in filenames. For example, "mfc" would match "MyFirstComponent.jsx".',
+      config.enableAcronymSearch,
+      'enableAcronymSearch',
+    );
+
+    this.addToggleSetting(
+      containerEl,
       'Show indicator icons',
       'Display icons to indicate that an item is recent, bookmarked, etc..',
       config.showOptionalIndicatorIcons,

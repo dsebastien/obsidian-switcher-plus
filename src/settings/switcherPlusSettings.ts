@@ -70,6 +70,7 @@ export class SwitcherPlusSettings {
       shouldSearchFilenames: false,
       shouldSearchBookmarks: false,
       shouldSearchRecentFiles: true,
+      enableAcronymSearch: false,
       pathDisplayFormat: PathDisplayFormat.FolderWithFilename,
       hidePathIfRoot: true,
       enabledRelatedItems: Object.values(RelationType),
@@ -528,6 +529,14 @@ export class SwitcherPlusSettings {
 
   set shouldSearchRecentFiles(value: boolean) {
     this.data.shouldSearchRecentFiles = value;
+  }
+
+  get enableAcronymSearch(): boolean {
+    return this.data.enableAcronymSearch;
+  }
+
+  set enableAcronymSearch(value: boolean) {
+    this.data.enableAcronymSearch = value;
   }
 
   get pathDisplayFormat(): PathDisplayFormat {

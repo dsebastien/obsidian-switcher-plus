@@ -567,6 +567,7 @@ export interface SettingsData {
   shouldSearchFilenames: boolean;
   shouldSearchBookmarks: boolean;
   shouldSearchRecentFiles: boolean;
+  enableAcronymSearch: boolean;
   pathDisplayFormat: PathDisplayFormat;
   hidePathIfRoot: boolean;
   enabledRelatedItems: RelationType[];
